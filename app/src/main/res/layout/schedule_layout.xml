@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/colorTransparent">
+
+    <TextView
+        android:id="@+id/matchid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="Match 1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stadiumid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingStart="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingEnd="0dp"
+        android:text="Oval Stadium"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/matchid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/leftimgid"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:scaleType="fitXY"
+        android:paddingEnd="0dp"
+        android:src="@drawable/ban"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchid" />
+
+    <TextView
+        android:id="@+id/leftcountryid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="@string/bangladesh"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/leftimgid"
+        app:layout_constraintStart_toEndOf="@+id/leftimgid"
+        app:layout_constraintTop_toTopOf="@+id/leftimgid" />
+
+
+    <ImageView
+        android:id="@+id/rightimgid"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/aus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leftimgid" />
+
+    <TextView
+        android:id="@+id/rightcountryid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="0dp"
+        android:text="@string/australia"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rightimgid"
+        app:layout_constraintStart_toEndOf="@+id/rightimgid"
+        app:layout_constraintTop_toTopOf="@+id/rightimgid" />
+
+
+    <TextView
+        android:id="@+id/dateid"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:paddingStart="0dp"
+        android:layout_marginTop="16dp"
+        android:paddingEnd="10dp"
+        android:text="30 May,Thu"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stadiumid" />
+
+    <TextView
+        android:id="@+id/timeid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:paddingStart="0dp"
+        android:paddingEnd="10dp"
+        android:text="06:00 AM"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dateid"
+        app:layout_constraintStart_toStartOf="@+id/dateid"
+        app:layout_constraintTop_toBottomOf="@+id/dateid" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

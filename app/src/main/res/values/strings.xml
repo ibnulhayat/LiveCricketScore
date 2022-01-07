@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiveCricket</string>
+    <string name="live_score">Live Score</string>
+    <string name="teams_playes"><![CDATA[Teams & Players]]></string>
+    <string name="shedule">Shedule</string>
+    <string name="live_tv">Live Tv</string>
+    <string name="point_table">Point Table</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="australia">Australia</string>
+</resources>
